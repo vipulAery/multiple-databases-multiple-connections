@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: multiple-databases-multiple-connections
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    include : default, postgresql, mysql
